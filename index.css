@@ -1,0 +1,41 @@
+* {
+    font-family: Roboto;
+}
+
+.bar {
+    fill: rgba(255, 255, 255, .2);
+    stroke: white;
+    stroke-width: 5px;
+    transition: .5s all;
+}
+
+.bar:hover {
+    fill: white;
+}
+
+.axis--y path, .axis--x path {
+    display: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+g line {
+    display: none;
+}
+
+g {
+    font-size: 10px;
+    color: white;
+}
+
+text {
+    fill: white;
+}
+
+.arc text {
+    text-anchor: middle;
+}
