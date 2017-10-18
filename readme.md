@@ -20,11 +20,7 @@ This section of the readme will show you how my final code came to be.
 
 ## Sources and help
 
-* [@wooorm](https://github.com/wooorm) - Help with many different things, including reminding me to ask my 🦆 more questions.
-* [@DesleyAalderink](https://github.com/DesleyAalderink) - Help with getting rid of footer in data.
-* [D3 Gallery: Bar Chart](https://bl.ocks.org/mbostock/3885304) - Used to create the bar chart.
-* [Class 3 slides](https://docs.google.com/presentation/d/1TpoPilc1qVIQU07u_IdPeNqSZcbgliPaLF0zZUWGvWE) - For cleaning data.
-* [Sort functionality](https://github.com/cmda-fe3/course-17-18/blob/master/site/class-4/sort/index.js)
+* [Assessment 2 sources](https://github.com/JensOrsel/fe3-assessment-2#sources-and-help) (since Assessment 3 was built from Assessment 2)
 
 ## License
 
