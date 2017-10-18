@@ -18,11 +18,13 @@ This section of the readme will show you how my final code came to be.
 
 ![Where I gave up](https://i.gyazo.com/34ac65f5a7ee70561a507b4e73123fa0.png)
 
-* This meant that I had to pick something else, something easier. During [class](https://github.com/cmda-fe3/course-17-18/blob/master/site/class-4/axis/index.js) we were taught how to filter bar charts - for [Assessment 2](https://jensorsel.github.io/fe3-assessment-2/) I already sorted a bar chart. I knew that in order to finish this assessment at all, I had to combine these. So that's what I did. I took my Assessment 2 code, altered it where needed, and started trying to fit in the filtering functionality. I tried my best to copy the (good) way that was used during class - however I just couldn't make that work either. After more hours of frustration I knew I was going to make [certain people](https://github.com/wooorm) very unhappy with some very ugly code (see the .js file). At least, the filtering worked. But of course, we're in the world of coding and we just can't have nice things. I'll elaborate on this in the section **Bug**. I put the amount of international flights on the y-axis, I thought this would be the most interesting thing to see visualised.
+* This meant that I had to pick something else, something easier. During [class](https://github.com/cmda-fe3/course-17-18/blob/master/site/class-4/axis/index.js) we were taught how to filter bar charts - for [Assessment 2](https://jensorsel.github.io/fe3-assessment-2/) I already sorted a bar chart. I knew that in order to finish this assessment at all, I had to combine these. So that's what I did. I took my Assessment 2 code, altered it where needed, and started trying to fit in the filtering functionality. I tried my best to copy the (good) way that was used during class - however I just couldn't make that work either. After more hours of frustration I knew I was going to make [certain people](https://github.com/wooorm) very unhappy with some very ugly code (see the .js file). At least, the filtering worked. But of course, we're in the world of coding and we just can't have nice things. I'll elaborate on this in the section [**Bug**](https://github.com/JensOrsel/fe3-assessment-3/blob/master/readme.md#bug). I put the amount of international flights on the y-axis, I thought this would be the most interesting thing to see visualised.
 
 * So now it's time for the world map! ... or not. By the time I managed to get the first visualisation working, I only had a small part of an evening left to get the second one working. I knew that a pie chart would be the simplest way of getting what I wanted out of the world map. This actually posed more of a challenge than I thought it'd be, because somehow I had never made a pie chart in d3 before. This also made it so that I couldn't do what I wanted to. I wanted to make three pie charts in a row, one for each airport, showing the percentages of where passengers come from. I just didn't know how to make different values in the dataset into different slices - the [example](https://bl.ocks.org/mbostock/3887235) uses two variables (age and population) where I'd need to use more. If we were able to make our own .csv files I believe it would have been possible, unfortunately we had to use dirty data. This resulted in me just showing the amount of local flights per airport (each airport as a slice). I added (once again, very ugly) filtering interactivity to make the user pick between years. I had some issues with the way the labels were put on top of the slices, since my labels are quite long they ended up 'underneath' the slice that came next ([screenshot](https://i.gyazo.com/c37b9a9eb8e0065d495831b765314971.png)). I fixed this by adding a `dx` attribute to the text. And that's basically it!
 
 ## Bug
+
+There is a bug (that I'm aware of) in this code. When you use the filter on the first visualisation, the sort functionality messes up. I load the data for the Amsterdam Airport in by default, and I believe that it keeps sorting the values as if it's still using the Amsterdam data. This means that only the data for the Amsterdam Airport is sorted correctly, and that the data for the Eindhoven and Maastricht airports are sorted the exact same way (which is wrong). I simply didn't have time to fix this.  
 
 ## Sources and help
 
@@ -33,8 +35,6 @@ This section of the readme will show you how my final code came to be.
 * [Understanding filtering conditions](http://bl.ocks.org/d3noob/8dc93bce7e7200ab487d)
 * [Understanding pie chart labels](http://jsfiddle.net/2uT7F/)
 * [Multi-series line chart](https://bl.ocks.org/mbostock/3884955)
-
-
 
 ## License
 
