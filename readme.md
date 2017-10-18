@@ -1,5 +1,7 @@
 # Assessment 3: Multiple interactive visualisations 📊
 
+![Cover image](https://i.gyazo.com/c6ac9bf296000206b78b560dff476c36.png)
+
 This assessment is all about using a dirty dataset and making multiple interactive datavisualisations using that dataset.
 
 ## Background
